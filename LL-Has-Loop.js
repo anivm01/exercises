@@ -60,6 +60,9 @@ class LinkedList {
   }
 
   // WRITE HAS LOOP METHOD HERE //
+  //initialize the slow and fast variables at the head of the linked list
+  //run through the linked list, if the fast variable catches up to the slow variable before reaching the end then there is a loop
+  //if the fast variable reaches the end of the linked list without crossing paths with the slow variable then there is no loop
   hasLoop() {
     let slow = this.head;
     let fast = this.head;
